@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "clustering_plotter"
 version = "0.0.1"
 authors = [
-    { name="Manex Bengoa" },
+    { name="Manex Bengoa"},
     { name="Cristian Pazos"},
 ]
 description = "Clase dedicada a poder visualizar diferentes tipos de graficos tras un clustering"

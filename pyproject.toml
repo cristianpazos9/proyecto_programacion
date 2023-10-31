@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "clusteringplotterprogra"
-version = "0.0.2"
+name = "proyectoclusteringclase"
+version = "0.0.1"
 authors = [
     { name="Manex Bengoa"},
     { name="Cristian Pazos"},

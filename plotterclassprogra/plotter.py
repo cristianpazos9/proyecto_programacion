@@ -5,10 +5,13 @@ import seaborn as sns
 
 class GraficoCluster:
     def __init__(self, datos):
-        self.datos = datos
-        self.colores = None
-        self.titulo = "Distribucion variable"
-        self.figsize = (12,4)
+          if datos.empty:
+            raise ValueError("El DataFrame está vacío. Proporcione un DataFrame con datos.")
+          self.datos = datos
+          self.colores = None
+          self.titulo = "Distribucion variable"
+          self.figsize = (12,4)
+    
 
     def configurar_colores(self, colores):
         self.colores = colores
@@ -52,6 +55,8 @@ class GraficoDeBarras(GraficoCluster):
 
 class GraficoHistogramaCluster(GraficoCluster):
     def mostrar(self, col, bins=20, log=False, histtype="step"):
+      if 'cluster' not in self.datos.columns:
+            raise ValueError("La columna 'cluster' no existe en el DataFrame. Asegúrese de que la columna 'cluster' esté presente, o comprueba que la c esta en minuscula.")
       datos = self.datos
       cluster_values = datos["cluster"].unique()
       n_clusters = datos["cluster"].nunique()
@@ -70,6 +75,8 @@ class GraficoHistogramaCluster(GraficoCluster):
 
 class GraficoDeBarrasCluster(GraficoCluster):
     def mostrar(self, col, order_df=None):
+      if 'cluster' not in self.datos.columns:
+            raise ValueError("La columna 'cluster' no existe en el DataFrame. Asegúrese de que la columna 'cluster' esté presente, o comprueba que la c esta en minuscula.")
       datosg = self.datos.groupby(by=[col, "cluster"]).size().reset_index().rename(columns={0:"Recuento"})
       cluster_values = datosg["cluster"].unique()
       n_clusters = datosg["cluster"].nunique()

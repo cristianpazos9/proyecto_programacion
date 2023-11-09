@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+
+<html lang=""es"">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Welcome to plotter clustering&#39;s documentation! &#8212; plotter clustering V1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-plotter-clustering-s-documentation">
+<h1>Welcome to plotter clustering's documentation!<a class="headerlink" href="#welcome-to-plotter-clustering-s-documentation" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="funciones-de-la-biblioteca">
+<h1>Funciones de la Biblioteca<a class="headerlink" href="#funciones-de-la-biblioteca" title="Permalink to this heading">¶</a></h1>
+<section id="graficocluster">
+<h2>GraficoCluster<a class="headerlink" href="#graficocluster" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoCluster">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">plotterclassprogra.plotter.</span></span><span class="sig-name descname"><span class="pre">GraficoCluster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoCluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>El objeto <cite>GraficoCluster</cite> se utiliza para crear gráficos básicos y configurar opciones comunes.</p>
+<p><strong>Uso básico:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plotterclassprogra.plotter</span> <span class="kn">import</span> <span class="n">GraficoCluster</span>
+
+<span class="c1"># Crear instancia de GraficoCluster con datos</span>
+<span class="n">grafico</span> <span class="o">=</span> <span class="n">GraficoCluster</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+
+<span class="c1"># Configurar colores</span>
+<span class="n">grafico</span><span class="o">.</span><span class="n">configurar_colores</span><span class="p">([</span><span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#00FF00&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">])</span>
+
+<span class="c1"># Configurar título</span>
+<span class="n">grafico</span><span class="o">.</span><span class="n">configurar_titulo</span><span class="p">(</span><span class="s2">&quot;Distribución de la Variable&quot;</span><span class="p">)</span>
+
+<span class="c1"># Configurar tamaño de la figura</span>
+<span class="n">grafico</span><span class="o">.</span><span class="n">configurar_figsize</span><span class="p">((</span><span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">grafico</span><span class="o">.</span><span class="n">mostrar</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoCluster.configurar_colores">
+<span class="sig-name descname"><span class="pre">configurar_colores</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colores</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoCluster.configurar_colores" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoCluster.configurar_figsize">
+<span class="sig-name descname"><span class="pre">configurar_figsize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figsize</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoCluster.configurar_figsize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoCluster.configurar_titulo">
+<span class="sig-name descname"><span class="pre">configurar_titulo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">titulo</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoCluster.configurar_titulo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoCluster.mostrar">
+<span class="sig-name descname"><span class="pre">mostrar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoCluster.mostrar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="graficohistograma">
+<h2>GraficoHistograma<a class="headerlink" href="#graficohistograma" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoHistograma">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">plotterclassprogra.plotter.</span></span><span class="sig-name descname"><span class="pre">GraficoHistograma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoHistograma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#plotterclassprogra.plotter.GraficoCluster" title="plotterclassprogra.plotter.GraficoCluster"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraficoCluster</span></code></a></p>
+<p>El objeto <cite>GraficoHistograma</cite> hereda de <cite>GraficoCluster</cite> y se utiliza para crear histogramas.</p>
+<p><strong>Uso básico:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plotterclassprogra.plotter</span> <span class="kn">import</span> <span class="n">GraficoHistograma</span>
+
+<span class="c1"># Crear instancia de GraficoHistograma con datos</span>
+<span class="n">histograma</span> <span class="o">=</span> <span class="n">GraficoHistograma</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+
+<span class="c1"># Configurar colores</span>
+<span class="n">histograma</span><span class="o">.</span><span class="n">configurar_colores</span><span class="p">([</span><span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#00FF00&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">])</span>
+
+<span class="c1"># Configurar título</span>
+<span class="n">histograma</span><span class="o">.</span><span class="n">configurar_titulo</span><span class="p">(</span><span class="s2">&quot;Histograma de la Variable&quot;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el histograma para una columna específica</span>
+<span class="n">histograma</span><span class="o">.</span><span class="n">mostrar</span><span class="p">(</span><span class="s1">&#39;nombre_de_la_columna&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoHistograma.mostrar">
+<span class="sig-name descname"><span class="pre">mostrar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">histtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bar'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoHistograma.mostrar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="graficodebarras">
+<h2>GraficoDeBarras<a class="headerlink" href="#graficodebarras" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoDeBarras">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">plotterclassprogra.plotter.</span></span><span class="sig-name descname"><span class="pre">GraficoDeBarras</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoDeBarras" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#plotterclassprogra.plotter.GraficoCluster" title="plotterclassprogra.plotter.GraficoCluster"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraficoCluster</span></code></a></p>
+<p>El objeto <cite>GraficoDeBarras</cite> hereda de <cite>GraficoCluster</cite> y se utiliza para crear gráficos de barras.</p>
+<p><strong>Uso básico:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plotterclassprogra.plotter</span> <span class="kn">import</span> <span class="n">GraficoDeBarras</span>
+
+<span class="c1"># Crear instancia de GraficoDeBarras con datos</span>
+<span class="n">grafico_barras</span> <span class="o">=</span> <span class="n">GraficoDeBarras</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+
+<span class="c1"># Configurar colores</span>
+<span class="n">grafico_barras</span><span class="o">.</span><span class="n">configurar_colores</span><span class="p">([</span><span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#00FF00&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">])</span>
+
+<span class="c1"># Configurar título</span>
+<span class="n">grafico_barras</span><span class="o">.</span><span class="n">configurar_titulo</span><span class="p">(</span><span class="s2">&quot;Gráfico de Barras de la Variable&quot;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el gráfico de barras para una columna específica</span>
+<span class="n">grafico_barras</span><span class="o">.</span><span class="n">mostrar</span><span class="p">(</span><span class="s1">&#39;nombre_de_la_columna&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoDeBarras.mostrar">
+<span class="sig-name descname"><span class="pre">mostrar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order_df</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoDeBarras.mostrar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="graficohistogramacluster">
+<h2>GraficoHistogramaCluster<a class="headerlink" href="#graficohistogramacluster" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoHistogramaCluster">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">plotterclassprogra.plotter.</span></span><span class="sig-name descname"><span class="pre">GraficoHistogramaCluster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoHistogramaCluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#plotterclassprogra.plotter.GraficoCluster" title="plotterclassprogra.plotter.GraficoCluster"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraficoCluster</span></code></a></p>
+<p>El objeto <cite>GraficoHistogramaCluster</cite> hereda de <cite>GraficoCluster</cite> y se utiliza para crear histogramas agrupados por cluster.</p>
+<p><strong>Uso básico:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plotterclassprogra.plotter</span> <span class="kn">import</span> <span class="n">GraficoHistogramaCluster</span>
+
+<span class="c1"># Crear instancia de GraficoHistogramaCluster con datos</span>
+<span class="n">histograma_cluster</span> <span class="o">=</span> <span class="n">GraficoHistogramaCluster</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+
+<span class="c1"># Configurar colores</span>
+<span class="n">histograma_cluster</span><span class="o">.</span><span class="n">configurar_colores</span><span class="p">([</span><span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#00FF00&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">])</span>
+
+<span class="c1"># Configurar título</span>
+<span class="n">histograma_cluster</span><span class="o">.</span><span class="n">configurar_titulo</span><span class="p">(</span><span class="s2">&quot;Histograma por Cluster de la Variable&quot;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el histograma para una columna específica y agrupado por cluster</span>
+<span class="n">histograma_cluster</span><span class="o">.</span><span class="n">mostrar</span><span class="p">(</span><span class="s1">&#39;nombre_de_la_columna&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoHistogramaCluster.mostrar">
+<span class="sig-name descname"><span class="pre">mostrar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">histtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'step'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoHistogramaCluster.mostrar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="graficodebarrascluster">
+<h2>GraficoDeBarrasCluster<a class="headerlink" href="#graficodebarrascluster" title="Permalink to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoDeBarrasCluster">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">plotterclassprogra.plotter.</span></span><span class="sig-name descname"><span class="pre">GraficoDeBarrasCluster</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoDeBarrasCluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#plotterclassprogra.plotter.GraficoCluster" title="plotterclassprogra.plotter.GraficoCluster"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraficoCluster</span></code></a></p>
+<p>El objeto <cite>GraficoDeBarrasCluster</cite> hereda de <cite>GraficoCluster</cite> y se utiliza para crear gráficos de barras agrupados por cluster.</p>
+<p><strong>Uso básico:</strong></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">plotterclassprogra.plotter</span> <span class="kn">import</span> <span class="n">GraficoDeBarrasCluster</span>
+
+<span class="c1"># Crear instancia de GraficoDeBarrasCluster con datos</span>
+<span class="n">grafico_barras_cluster</span> <span class="o">=</span> <span class="n">GraficoDeBarrasCluster</span><span class="p">(</span><span class="n">datos</span><span class="p">)</span>
+
+<span class="c1"># Configurar colores</span>
+<span class="n">grafico_barras_cluster</span><span class="o">.</span><span class="n">configurar_colores</span><span class="p">([</span><span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#00FF00&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">])</span>
+
+<span class="c1"># Configurar título</span>
+<span class="n">grafico_barras_cluster</span><span class="o">.</span><span class="n">configurar_titulo</span><span class="p">(</span><span class="s2">&quot;Gráfico de Barras por Cluster de la Variable&quot;</span><span class="p">)</span>
+
+<span class="c1"># Mostrar el gráfico de barras para una columna específica y agrupado por cluster</span>
+<span class="n">grafico_barras_cluster</span><span class="o">.</span><span class="n">mostrar</span><span class="p">(</span><span class="s1">&#39;nombre_de_la_columna&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="plotterclassprogra.plotter.GraficoDeBarrasCluster.mostrar">
+<span class="sig-name descname"><span class="pre">mostrar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">order_df</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#plotterclassprogra.plotter.GraficoDeBarrasCluster.mostrar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">plotter clustering</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Manex Bengoa y Cristian Pazos.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

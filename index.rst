@@ -156,6 +156,36 @@ GraficoDeBarrasCluster
       # Mostrar el gráfico de barras para una columna específica y agrupado por cluster
       grafico_barras_cluster.mostrar('nombre_de_la_columna')
 
+GraficoDispersion
+-----------------
+
+.. autoclass:: plotterclassprogra.plotter.GraficoDispersion
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+   El objeto `GraficoDispersion` hereda de `GraficoCluster` y se utiliza para crear gráficos de dispersión.
+
+   **Uso básico:**
+
+   .. code-block:: python
+
+      from plotterclassprogra.plotter import GraficoDispersion
+
+      # Crear instancia de GraficoDispersion con datos
+      scatter_plot = GraficoDispersion(datos)
+
+      # Configurar colores
+      scatter_plot.configurar_colores(['#FF0000', '#00FF00', '#0000FF'])
+
+      # Configurar título
+      scatter_plot.configurar_titulo("Gráfico de Dispersión")
+
+      # Mostrar el gráfico de dispersión para dos columnas, con opcional agrupación por cluster
+      scatter_plot.mostrar('columna_x', 'columna_y', hue_col='cluster')
+
+
+
 
 Indices and tables
 ==================

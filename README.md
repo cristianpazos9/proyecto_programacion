@@ -1,4 +1,4 @@
-![image](https://github.com/cristianpazos9/proyecto_programacion/assets/84556821/8554d083-dd2c-487e-b58d-8129811a1d74)# proyecto_programacion
+# proyecto_programacion
 
 ## Libreria de Visualización para Clustering
 
